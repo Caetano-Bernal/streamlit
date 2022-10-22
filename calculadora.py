@@ -65,7 +65,7 @@ def run():
     salario_minimo = st.sidebar.number_input('Salario minimo', value = 2424, step=100)
     qtd_mes = st.sidebar.number_input('tempo de pagamento do salario minino',value = 60, step=5)
     percentual = st.sidebar.number_input('percentual do montante',value = 0.05, step=0.01)
-    montante = st.sidebar.number_input('montante', value = 1000000,step=500000)
+    montante = st.sidebar.number_input('montante', value = 10000000,step=500000)
 
     total, comissao, valor_salario = calcula(salario_minimo, qtd_mes, valor_entrada,montante,percentual) 
 
