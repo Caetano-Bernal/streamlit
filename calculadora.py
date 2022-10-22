@@ -62,7 +62,7 @@ def run():
     formatacao = '<p style="color:Black; font-size: 35px;">{}</p>'
 
     valor_entrada = st.sidebar.number_input('valor de entrada',value = 100000, step=5000)
-    salario_minimo = st.sidebar.number_input('Salario minimo', value = 1200, step=100)
+    salario_minimo = st.sidebar.number_input('Salario minimo', value = 2424, step=100)
     qtd_mes = st.sidebar.number_input('tempo de pagamento do salario minino',value = 60, step=5)
     percentual = st.sidebar.number_input('percentual do montante',value = 0.05, step=0.01)
     montante = st.sidebar.number_input('montante', value = 1000000,step=500000)
@@ -73,7 +73,7 @@ def run():
     col1.metric("Total", prettify(total))
     col2.metric("Comissão", prettify(comissao))
     col3.metric("Total Salario", prettify(valor_salario))
-    col4.metric("Total Salario", prettify(valor_entrada))
+    col4.metric("Valor Entrada", prettify(valor_entrada))
 if __name__ == '__main__':
     #by default it will run at 8501 port
     run()
